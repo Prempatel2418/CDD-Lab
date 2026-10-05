@@ -1,0 +1,11 @@
+* [32mfeature/my-feature[m
+  features.py[m
+  main[m
+  my-feature-branch[m
+  [31mremotes/origin/HEAD[m -> origin/main
+  [31mremotes/origin/features.py[m
+  [31mremotes/origin/main[m
+  [31mremotes/origin/my-feature-branch[m
+  [31mremotes/upstream/HEAD[m -> upstream/main
+  [31mremotes/upstream/feature-dashboard[m
+  [31mremotes/upstream/main[m
