@@ -2,16 +2,19 @@ name: Continuous Integration
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  check-file:
-    runs-on: windows-latest
-
+  build-and-test:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Check student data file
-        shell: cmd
-        run: if exist studentdata.txt (echo File exists) else (exit /b 1)
+      - name: Build project
+        run: make build
+
+      - name: Test project
+        run: make test
